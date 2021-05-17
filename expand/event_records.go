@@ -1,14 +1,14 @@
 package expand
 
 import (
-	"github.com/JFJun/stafi-substrate-go/expand/acala"
-	"github.com/JFJun/stafi-substrate-go/expand/base"
-	"github.com/JFJun/stafi-substrate-go/expand/chainX"
-	"github.com/JFJun/stafi-substrate-go/expand/crust"
-	"github.com/JFJun/stafi-substrate-go/expand/darwinia"
-	"github.com/JFJun/stafi-substrate-go/expand/ori"
-	"github.com/JFJun/stafi-substrate-go/expand/polkadot"
-	"github.com/JFJun/stafi-substrate-go/expand/stafi"
+	"github.com/coldwallet-group/stafi-substrate-go/expand/acala"
+	"github.com/coldwallet-group/stafi-substrate-go/expand/base"
+	"github.com/coldwallet-group/stafi-substrate-go/expand/chainX"
+	"github.com/coldwallet-group/stafi-substrate-go/expand/crust"
+	"github.com/coldwallet-group/stafi-substrate-go/expand/darwinia"
+	"github.com/coldwallet-group/stafi-substrate-go/expand/ori"
+	"github.com/coldwallet-group/stafi-substrate-go/expand/polkadot"
+	"github.com/coldwallet-group/stafi-substrate-go/expand/stafi"
 	"github.com/stafiprotocol/go-substrate-rpc-client/types"
 	"strings"
 )

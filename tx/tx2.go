@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"github.com/JFJun/go-substrate-crypto/crypto"
-	"github.com/JFJun/stafi-substrate-go/utils"
+	"github.com/coldwallet-group/stafi-substrate-go/utils"
 	"github.com/stafiprotocol/go-substrate-rpc-client/types"
 	"golang.org/x/crypto/blake2b"
 	"strings"

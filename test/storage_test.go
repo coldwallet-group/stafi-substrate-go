@@ -3,7 +3,7 @@ package test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/JFJun/stafi-substrate-go/client"
+	"github.com/coldwallet-group/stafi-substrate-go/client"
 	"github.com/stafiprotocol/go-substrate-rpc-client/types"
 	"testing"
 )

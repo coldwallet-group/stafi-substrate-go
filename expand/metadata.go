@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/JFJun/stafi-substrate-go/utils"
+	"github.com/coldwallet-group/stafi-substrate-go/utils"
 	"github.com/huandu/xstrings"
 	"github.com/stafiprotocol/go-substrate-rpc-client/types"
 )

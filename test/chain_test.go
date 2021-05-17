@@ -2,7 +2,7 @@ package test
 
 import (
 	"fmt"
-	"github.com/JFJun/stafi-substrate-go/client"
+	"github.com/coldwallet-group/stafi-substrate-go/client"
 	"testing"
 )
 

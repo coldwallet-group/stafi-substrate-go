@@ -7,10 +7,10 @@ import (
 	"errors"
 	"fmt"
 	"github.com/JFJun/go-substrate-crypto/ss58"
-	"github.com/JFJun/stafi-substrate-go/base"
-	"github.com/JFJun/stafi-substrate-go/expand"
-	"github.com/JFJun/stafi-substrate-go/models"
-	"github.com/JFJun/stafi-substrate-go/utils"
+	"github.com/coldwallet-group/stafi-substrate-go/base"
+	"github.com/coldwallet-group/stafi-substrate-go/expand"
+	"github.com/coldwallet-group/stafi-substrate-go/models"
+	"github.com/coldwallet-group/stafi-substrate-go/utils"
 	gsrc "github.com/stafiprotocol/go-substrate-rpc-client"
 	gsClient "github.com/stafiprotocol/go-substrate-rpc-client/client"
 	"github.com/stafiprotocol/go-substrate-rpc-client/rpc"
@@ -486,6 +486,21 @@ func (c *Client) GetAccountInfo(address string) (*types.AccountInfo, error) {
 		return nil, fmt.Errorf("create System.Account storage error: %v", err)
 	}
 	var accountInfo types.AccountInfo
+	if c.ChainName == "crab"{
+		var tmpaccountInfo models.CringAccountInfo
+		var ok bool
+		ok, err = c.C.RPC.State.GetStorageLatest(storage, &tmpaccountInfo)
+		if err != nil || !ok {
+			return nil, fmt.Errorf("get account info error: %v", err)
+		}
+		accountInfo.Nonce = tmpaccountInfo.Nonce
+		accountInfo.Refcount = tmpaccountInfo.Refcount
+		accountInfo.Data.Free = tmpaccountInfo.Data.Free
+		accountInfo.Data.FreeFrozen = tmpaccountInfo.Data.FreeFrozen
+		accountInfo.Data.MiscFrozen = tmpaccountInfo.Data.MiscFrozen
+		accountInfo.Data.Reserved = tmpaccountInfo.Data.Reserved
+		return &accountInfo, nil
+	}
 	var ok bool
 	ok, err = c.C.RPC.State.GetStorageLatest(storage, &accountInfo)
 	if err != nil || !ok {

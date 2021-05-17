@@ -1,4 +1,4 @@
-module github.com/JFJun/stafi-substrate-go
+module github.com/coldwallet-group/stafi-substrate-go
 
 go 1.14
 

@@ -3,9 +3,9 @@ package test
 import (
 	"fmt"
 	"github.com/JFJun/go-substrate-crypto/crypto"
-	"github.com/JFJun/stafi-substrate-go/client"
-	"github.com/JFJun/stafi-substrate-go/expand"
-	"github.com/JFJun/stafi-substrate-go/tx"
+	"github.com/coldwallet-group/stafi-substrate-go/client"
+	"github.com/coldwallet-group/stafi-substrate-go/expand"
+	"github.com/coldwallet-group/stafi-substrate-go/tx"
 	"testing"
 )
 

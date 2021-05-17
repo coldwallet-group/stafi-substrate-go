@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/JFJun/stafi-substrate-go/client"
+	"github.com/coldwallet-group/stafi-substrate-go/client"
 )
 
 func main() {

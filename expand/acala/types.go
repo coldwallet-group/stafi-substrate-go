@@ -2,7 +2,7 @@ package acala
 
 import (
 	"fmt"
-	"github.com/JFJun/stafi-substrate-go/expand/base"
+	"github.com/coldwallet-group/stafi-substrate-go/expand/base"
 	"github.com/stafiprotocol/go-substrate-rpc-client/scale"
 	"github.com/stafiprotocol/go-substrate-rpc-client/types"
 )

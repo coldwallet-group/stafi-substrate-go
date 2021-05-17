@@ -1,5 +1,7 @@
 package models
 
+import "github.com/stafiprotocol/go-substrate-rpc-client/types"
+
 type Bytes []byte
 type SignedBlock struct {
 	Block         Block `json:"block"`
@@ -85,4 +87,16 @@ type UtilityParamsValueArg struct {
 	Type     string      `json:"type"`
 	Value    interface{} `json:"value"`
 	ValueRaw string      `json:"value_raw"`
+}
+type CringAccountInfo struct {
+	Nonce    types.U32
+	Refcount types.U32
+	Providers types.U32
+	Sufficients types.U32
+	Data     struct {
+		Free       types.U128
+		Reserved   types.U128
+		MiscFrozen types.U128
+		FreeFrozen types.U128
+	}
 }
